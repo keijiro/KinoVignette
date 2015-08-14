@@ -31,13 +31,13 @@ namespace Kino
     {
         #region Public Properties
 
-        // Camera focal length
+        // Natural vignetting falloff
         [SerializeField, Range(0.0f, 1.0f)]
-        float _intensity = 0.05f;
+        float _falloff = 0.5f;
 
         public float intensity {
-            get { return _intensity; }
-            set { _intensity = value; }
+            get { return _falloff; }
+            set { _falloff = value; }
         }
 
         #endregion
@@ -61,7 +61,7 @@ namespace Kino
 
             var cam = GetComponent<Camera>();
             _material.SetVector("_Aspect", new Vector2(cam.aspect, 1));
-            _material.SetFloat("_Intensity", _intensity);
+            _material.SetFloat("_Falloff", _falloff);
 
             Graphics.Blit(source, destination, _material, 0);
         }

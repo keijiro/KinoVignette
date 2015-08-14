@@ -29,18 +29,18 @@ namespace Kino
     [CustomEditor(typeof(Vignette))]
     public class VignetteEditor : Editor
     {
-        SerializedProperty _intensity;
+        SerializedProperty _falloff;
 
         void OnEnable()
         {
-            _intensity = serializedObject.FindProperty("_intensity");
+            _falloff = serializedObject.FindProperty("_falloff");
         }
 
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
 
-            EditorGUILayout.PropertyField(_intensity);
+            EditorGUILayout.PropertyField(_falloff);
 
             serializedObject.ApplyModifiedProperties();
         }
