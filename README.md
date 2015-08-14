@@ -1,8 +1,8 @@
 KinoVignette
 ============
 
-KinoVignette is an image effect for Unity, which simulates [natural vignetting]
-[Wikipedia] effect.
+KinoVignette is an image effect for Unity, which recreates [natural vignetting]
+[Wikipedia].
 
 ![image](https://41.media.tumblr.com/cba35e70087ace84b59b42b210c993e3/tumblr_nt2n34QhOc1qio469o1_400.png)
 
