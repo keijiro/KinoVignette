@@ -6,6 +6,6 @@ public class PackageTool
     [MenuItem("Package/Update Package")]
     static void UpdatePackage()
     {
-        AssetDatabase.ExportPackage("Assets/Kino/Vignette", "KinoVignette.unitypackage", ExportPackageOptions.Recurse);
+        AssetDatabase.ExportPackage("Assets/Kino", "KinoVignette.unitypackage", ExportPackageOptions.Recurse);
     }
 }
